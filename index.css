@@ -1,0 +1,138 @@
+@font-face {
+    font-family: WorkSans-bold;
+    src: url("assets/fonts/static/WorkSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: WorkSans-regular;
+    src: url("assets/fonts/static/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: WorkSans-semibold;
+    src: url("assets/fonts/static/WorkSans-SemiBold.ttf");
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-weight: 400, 600, 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerimage {
+    position: relative;
+}
+.imag1{
+    width: 100%;
+}
+
+  summary {
+    list-style: none;
+    position: relative;
+    padding: 10px 40px 10px 10px;
+    background: url('./assets/images/icon-plus.svg') no-repeat right 50%;
+    background-size: 32px;
+    font-weight: bold;
+}
+
+details[open] > summary {
+    background: url('./assets/images/icon-minus.svg') no-repeat right 50%;
+}
+
+summary::after {
+    content: "";
+    display: inline-block;
+    width: 18px; 
+    height: 18px;  
+    background: url('./assets/images/your-image.svg') no-repeat right center; 
+    background-size: cover;
+    margin-left: 10px; 
+}
+
+.detail-p{
+    color: hsl(289, 5%, 57%);
+    font-size: 17px;
+    margin-left: 2%;
+}
+
+.heading{
+    color: hsl(291, 42%, 13%);
+    font-weight: 1000;
+    margin-left: 67px;
+    font-size: 165%;
+    margin-top: 7%;
+    margin-bottom: 2%
+}
+
+.summary{
+    color: hsl(291, 24%, 15%);
+}
+
+.box-container {
+    background-color: white;
+    position: absolute;
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 37%;
+    top: 45%;
+    left: 31%;
+    right: 20%;
+    color: black;
+    font-size: 27px;
+    align-items: center;
+}
+
+.box-container img {
+    width: 3%;
+    margin-right: 10px;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 1%;
+    width: 8%
+}
+
+.ques-1{
+    position: relative;
+}
+
+@media (max-width: 375px) {
+    body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading{
+        font-size: 165%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 66px;
+    }
+
+    .imag1 {
+        height: 15vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .box-container{
+        width: 100%;
+        margin-left: -23%;
+    width: 86%;
+    margin-top: 3%;
+    position: absolute;
+    border-radius: 7px;
+    }
+
+    .box-container img{
+        margin-top: 6%;
+        margin-left: 2%;
+        margin-bottom: 54%;
+        width: 13%
+    }
+}
